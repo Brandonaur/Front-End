@@ -7,57 +7,90 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <img src="Assests/Monogram-BG-Logo-Design-by-Greenlines-Studios.jpg" alt="Logo" width="100" height="70" >
-        <h1>Brandon Garrido Zapata</h1>
+    <header><!--Encabezado-->
+        <div class="logo">
+            <img src="Assests/Monogram-BG-Logo-Design-by-Greenlines-Studios.jpg" alt="Logo" width="100" height="70">
+            <h1>Brandon Garrido Zapata</h1>
+        </div>
+        <h1>Hola, Soy Brandon Garrido</h1>
+        <p>Estudiante de Informatica y ciencias de la Computacion.</p>
+        <p>Bienvenidos a mi Blog Personal, a continuacion hare uso de la pagina para explicarme y que conozcan mas sobre mi.</p>
         <nav><!--Barra de navegacion-->
-            <a href="#Sobre Mi">Sobre Mi</a>
+            <a href="#Sobre-Mi">Sobre Mi</a>
             <a href="#Habilidades">Habilidades</a>
             <a href="#Proyectos">Proyectos</a>
             <a href="#contacto">Contacto</a>
         </nav>
     </header>
     <main><!--Principal-->
-        <section id="Sobre Mi">
-            <h1>Hola, Soy Brandon Garrido</h1>
-            <p>Estudiante de Informatica con experiencia en HTML, CSS y Python. 
-                Me Fascina la Programacion y El desarollo Web.  Actualmente Soy estudiante el Instituto Tecnologico de Chile INACAP</p>
-            <img src="Assests/Brandon-Garrido-Zapata.jpg" alt="Foto de Brandon" width="200" height="200">    
+        <section id="Sobre-Mi">
+            <div class="sobremi">
+                <h1>Un poco sobre mi</h1>
+                <p>Cuento con experiencia en HTML, CSS, Python y Java.
+                    Me Fascina la Programacion y El desarollo Web. Actualmente Soy estudiante el Instituto Tecnologico de Chile INACAP
+                    estoy en mi segundo año de formacion academica en INACAP, aunque en total llevo 3 años estudiando informatica incluyendo Talleres y Cursos en Educacion media
+                </p>
+                <article>
+                    <p>♦Las reglas son las reglas. Yo prefiero la ciencia, pero hay otros que prefieren el poder, los músculos y esas cosas. No lo entiendo pero son diferentes estilos. Eso no les hace ser idiotas.♦ <u>Senku Ishigami</u></p>
+                </article>
+            </div>
+            <div class="sobrebe">
+                <img src="Assests/IMG-20260421-WA0006.jpg" alt="Foto de Brandon" width="200" height="200">
+                <aside class="datos-personales">
+                    <h2>Datos Personales</h2>
+                    <p><strong>Edad:</strong> 22 años</p>
+                    <p><strong>Ciudad:</strong> Concepcion, Chile</p>
+                    <p><strong>Email:</strong> brandon.zgarridoz@gmail.com</p>
+                    <p><strong>Intereses:</strong> Programacion, Videojuegos, Musica, Chocolate</p>
+                </aside>
+            </div>
         </section>
         <section id="Habilidades">
             <h1>Habilidades</h1>
-            <ul>
+            <ol>
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>Python</li>
-            </ul>
+            </ol>
         </section>
         <section id="Proyectos">
             <h1>Proyectos</h1>
             <p>Aquí puedes ver algunos de mis proyectos recientes:</p>
-            <!-- Agrega tus proyectos aquí -->
-
-            
-        </section>
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <form>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre"
-               placeholder="Tu nombre">
-               <label for="email">Email:</label>
-            <input type="email" id="email" name="email"
-               placeholder="tu@email.com">
-               <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="4"
-                  placeholder="Escribeme tu mensaje">
-                </textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-        <footer>
-            <p>&copy; 2026 Evaluacion01_Front_End - INACAP Front End</p>
-        </footer>
+            </section>    
     </main>
+        <aside>
+        <h2>Sobre este Blog</h2>
+        <p>Este blog fue creado como Evaluacion para clases Front End y como parte de mi desarollo profesional en el mundo digital. espero que sea actualizado periodicamente</p>
+        <ul>
+            <li><a href="#">HTML5</a></li>  
+            <li><a href="#">CSS3</a></li>
+            <li><a href="#">JavaScript</a></li>
+        </ul>
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"
+        placeholder="Tu nombre">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"
+        placeholder="tu@email.com">
+        <select id="asunto" name="asunto">
+            <option value="">Selecciona un asunto</option>
+            <option value="consulta">Consulta</option>
+            <option value="sugerencia">Sugerencia</option>
+            <option value="comentario">Comentario</option>
+        </select>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4"
+        placeholder="Escribe tu mensaje...">
+        </textarea>
+        <button type="submit">Enviar</button>
+        </form>
+    </section>
+</aside>
+<footer>
+    <p>&copy; 2026 Evaluacion01_Front_End - INACAP Front End</p>
+</footer>
 </body>
 </html>
