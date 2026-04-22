@@ -106,3 +106,51 @@ img{
     right: 40px;
     position: absolute;
 }
+.tabla{
+    width: 100%;
+    border-collapse: collapse;
+    padding: 50px;
+    margin: 50px;
+    gap: 20px;
+    background-color: var(--color-primary-dark);
+    border-radius: 20px;
+    text-align: start;
+}
+.th, td{
+    border: 1px solid var(--color-border);
+    padding: 10px;
+    border-collapse: collapse;
+    margin: 20px;
+    gap: 20px;
+    background: #9a9398;
+    color: var(--color-white);
+}
+.barra{
+    width: 60%;
+    height: 75px;
+    border-radius: 30px;
+    background: linear-gradient(to right,#e44141 var(--porcentaje), var(--color-muted) var(--porcentaje));
+}
+ul{
+    list-style-type: square;
+    padding-left: 20px;
+    display: block;
+    background: #70f55c;
+    padding: 20px;
+    border-radius: 20px;
+}
+ol{
+    list-style-type: decimal;
+    padding-left: 20px;
+    display: block;
+    background: #70f55c;
+    border-radius: 20px;
+    padding: 20px;}
+.listas{
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+    padding: 20px;
+    margin: 20px;
+    height: 300px;
+}
